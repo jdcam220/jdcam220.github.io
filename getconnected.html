@@ -14,7 +14,8 @@
   }
 
   .intro {
-    padding-top: 100px;
+    position: relative;
+	top: 200px;
     
   }
 
@@ -27,75 +28,13 @@
     text-align: center;
   }
 
-  .container {
-    display: block;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 30px;
-    box-sizing: border-box;
-    width: 700px;
-    background-color: #eceef1;
-    padding: 20px;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
-  }
-
-  input[type=text],
-  select,
-  textarea {
-    width: 90%;
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 25px;
-    resize: vertical;
-    resize: none;
-  }
-
-  label {
-    padding: 12px 12px 12px 0;
-    display: inline-block;
-  }
-
-  input[type=submit] {
-    background-color: #4CAF50;
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    float: right;
-  }
-
-  input[type=submit]:hover {
-    background-color: #45a049;
-  }
-
-
-  .col-25 {
-    float: left;
-    width: 20%;
-    margin-top: 6px;
-  }
-
-  .col-75 {
-    float: left;
-    width: 75%;
-    margin-top: 6px;
-  }
-
-  /* Clear floats after the columns */
-  .row:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
 
   .center {
   margin-top: 50px;
   display: flex;
   justify-content: center;
   align-items: center; 
+	position: relative;
   }
 
   .btn {
@@ -183,43 +122,10 @@
 
   <div id="contact">
   <div class="intro">
-    <h1>Let's Start a Conversation</h1>
-    <h2>Ask how can I help you:</h2>
+    <h1>You can contact me on any of this accounts</h1>
   </div>
-  <div class="container">
-    <form action="/action_page.php">
-      <div class="row">
-        <div class="col-25">
-          <label for="fname">Name</label>
-        </div>
-        <div class="col-75">
-          <input type="text" id="fname" name="name" placeholder="Your name...">
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-25">
-          <label for="lname">Email</label>
-        </div>
-        <div class="col-75">
-          <input type="text" id="lname" name="lastname" placeholder="Valid Email...">
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-25">
-          <label for="subject">Message</label>
-        </div>
-        <div class="col-75">
-          <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-        </div>
-      </div>
-      <br>
-      <div class="row">
-        <input type="submit" value="Submit">
-      </div>
-    </form>
-  </div>
+ 
 
-  <h1>Or connect with me on...</h1>
 
   <div class="center">
     <button class="btn" onclick= "document.location ='mailto:jdcamarin20@gmail.com'"><i class="email"></i><img  src="images/email.png"></button>
