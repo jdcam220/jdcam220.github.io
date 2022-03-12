@@ -3,6 +3,9 @@
 <style>
   body {
     background-color: #212121;
+	background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
     height: 100%;
     margin: 0% auto;
     font-family: sans-serif;
@@ -29,34 +32,77 @@
 
 
   .center {
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    top: 150px;
-    width: 90%;
+	position: relative;
+	margin: auto;
+	top: 200px; 
+	  width: 10%;
   }
 
-  .btn {
-    border-radius: 25px;
-    width: 5%;
-    border: none;
-    font-size: 16px;
-    margin: 0px 10px;
-    cursor: pointer;
-    text-align: center;
-    background-color: Transparent;
-  }
-  .btn img {
-      height: 70px;
-      width: 70px;
-      margin: 10px;
-    }
 
-  .btn:hover {
 
-  }
+/* CSS */
+.button {
+  text-align: center;
+  width: 180px;
+  height: 60px;
+  margin: 10px;
+  display: inline-block;
+  background: #fff;
+  backface-visibility: hidden;
+  border-radius: .375rem;
+  border-style: solid;
+  border-width: .125rem;
+  box-sizing: border-box;
+  color: #212121;
+  cursor: pointer;
+  font-family: Circular,Helvetica,sans-serif;
+  font-size: 1.125rem;
+  font-weight: 700;
+  letter-spacing: -.01em;
+  line-height: 1.3;
+  padding: .875rem 1.125rem;
+  position: relative;
+  text-decoration: none;
+  transform: translateZ(0) scale(1);
+  transition: transform .2s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button:not(:disabled):hover {
+  transform: scale(1.05);
+}
+
+.button:not(:disabled):hover:active {
+  transform: scale(1.05) translateY(.125rem);
+}
+
+.button:focus {
+  outline: 0 solid transparent;
+}
+
+.button:focus:before {
+  content: "";
+  left: calc(-1*.375rem);
+  pointer-events: none;
+  position: absolute;
+  top: calc(-1*.375rem);
+  transition: border-radius;
+  user-select: none;
+}
+
+.button:focus:not(:focus-visible) {
+  outline: 0 solid transparent;
+}
+
+.button:focus:not(:focus-visible):before {
+  border-width: 0;
+}
+
+.button:not(:disabled):active {
+  transform: translateY(.125rem);
+}
 
 
   /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
@@ -72,15 +118,6 @@
       margin-top: 0;
     }
 
-    .btn {
-      padding: 10px;
-      width: 60px;
-    }
-    .btn img {
-      height: 50px;
-      width: 50px;
-      
-    }
 
 
   }
@@ -123,16 +160,18 @@
 
   <div id="contact">
   <div class="intro">
-    <h1>You can contact me on any of this accounts</h1>
+    <h1>Any of these accounts can be used to contact me.</h1>
+	  <br>
+	  <br>
+	<h1 align="center">@jdcam220</h1>
   </div>
  
 
-
   <div class="center">
-	<button class="btn" onclick="window.open('mailto:jdcamarin20@gmail.com');"><i class="email"></i><img  src="images/email.png"></button>
-    <button class="btn" onclick="window.open('https://www.linkedin.com/in/jdcam220/','_blank')"><i class="linkedin"></i><img   src="images/linkedin.png"></button>
-    <button class="btn" onclick="window.open('https://www.facebook.com/jdcam220/','_blank')"><i class="facebook" ></i><img   src="images/facebook.png"></button>
-    <button class="btn" onclick="window.open('https://twitter.com/jdcam220','_blank')"><img  src="images/twitter.png"></button>
+	<button class="button" onclick="window.open('mailto:jdcamarin20@gmail.com');">Email</button>
+    <button class="button" onclick="window.open('https://www.linkedin.com/in/jdcam220/','_blank')">LinkedIn</button>
+    <button class="button" onclick="window.open('https://www.facebook.com/jdcam220/','_blank')">Facebook</button>
+    <button class="button" onclick="window.open('https://twitter.com/jdcam220','_blank')">Twitter</button>
   </div>
 
 </div>
