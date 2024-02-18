@@ -17,75 +17,48 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <body>
+  
+  <div class="container mx-auto container-full-height">
+    <div class="container p-4 m-4">
+      <div class="container mt-4">
 
-  <div class="container mx-auto">
-    <div id="navbar-placeholder"></div>
-  </div>
-
-  <div class="container mx-auto container-full-height centered">
-    <div class="container">
-      <div class="row">
-
-        <div class="col-8">
-          <div class="container">
+        <div class="row">
+          <!--Introduction-->
+          <div class="col-8">
             <div class="container">
-            <h1>Hello! I'm John Dave, a developer based in Bacolod City.</h1>
-            <p>
-              I am passionate about crafting code that adheres to best practices and industry standards, ensuring
-              cleanliness and efficiency in my programming.</p>
-            <p>
-              I attended the University of Saint Lasalle for four years, focusing on Computer Science with a
-              specialization in Game Development during my undergraduate studies.
-            </p>
+              <div class="container">
+                <h1>Hello! I'm John Dave, a developer based in Bacolod City.</h1>
+                <p>
+                  I am passionate about crafting code that adheres to best practices and industry standards, ensuring
+                  cleanliness and efficiency in my programming.</p>
+                <p>
+                  I attended the University of Saint Lasalle for four years, focusing on Computer Science with a
+                  specialization in Game Development during my undergraduate studies.
+                </p>
+              </div>
             </div>
           </div>
-        </div>
-
-        <div class="col-4">
-          <div class="container d-flex justify-content-center align-items-center h-100">
-            <!-- Wrapper for centered content -->
-            <div class="center-wrapper">
-              <!-- Centered element -->
-        
+          <!--Profile Picture-->
+          <div class="col-4">
+            <div class="container d-flex justify-content-center align-items-center h-100">
+              <!-- Wrapper for centered content -->
+              <div class="center-wrapper">
+                <!-- Centered element -->
                 <img class="profile-img" src="images/myprofile3.jpg" alt="Profile Image">
- 
+              </div>
             </div>
           </div>
+
         </div>
 
       </div>
     </div>
   </div>
-  
+
+  <div class="container">
+    Hello World
+  </div>
+
 </body>
 
 </html>
-
-<script>
-  // Function to load the navbar
-  function loadNavbar() {
-    // Create a new XMLHttpRequest object
-    var xhr = new XMLHttpRequest();
-
-    // Define the callback function
-    xhr.onreadystatechange = function () {
-      if (xhr.readyState === XMLHttpRequest.DONE) {
-        if (xhr.status === 200) {
-          // Insert the navbar HTML into the placeholder div
-          document.getElementById('navbar-placeholder').innerHTML = xhr.responseText;
-        } else {
-          console.error('Failed to load navbar: ' + xhr.status);
-        }
-      }
-    };
-
-    // Open the XMLHttpRequest
-    xhr.open('GET', 'navbar.html', true);
-
-    // Send the request
-    xhr.send();
-  }
-
-  // Call the loadNavbar function when the page loads
-  window.onload = loadNavbar;
-</script>
