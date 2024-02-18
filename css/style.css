@@ -1,0 +1,5 @@
+.profile-img {
+    border-radius: 50%; /* This makes the image round */
+    width: 240px; /* Adjust the width as needed */
+    height: 240px; /* Adjust the height as needed */
+  }
