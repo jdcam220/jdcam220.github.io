@@ -3,6 +3,9 @@
 
 <head>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="css/button.css">
+  <link rel="stylesheet" href="css/border.css">
   <meta charset="utf-8">
   <title>Home</title>
 
@@ -13,50 +16,131 @@
     integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
     crossorigin="anonymous"></script>
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+
+
+
 </head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<body>
-  
+<body class="">
+
   <div class="container mx-auto container-full-height">
-    <div class="container p-4 m-4">
-      <div class="container mt-4 centered">
-
-        <div class="row">
-          <!--Introduction-->
-          <div class="col-8">
+    <!-- <div class="container"> -->
+    <div class="container centered">
+      <div class="row">
+        <!--Introduction-->
+        <div class="col-8">
+          <div class="container">
             <div class="container">
-              <div class="container">
-                <h1>Hello! I'm John Dave, a developer based in Bacolod City.</h1>
-                <p>
-                  I am passionate about crafting code that adheres to best practices and industry standards, ensuring
-                  cleanliness and efficiency in my programming.</p>
-                <p>
-                  I attended the University of Saint Lasalle for four years, focusing on Computer Science with a
-                  specialization in Game Development during my undergraduate studies.
-                </p>
-              </div>
-            </div>
-          </div>
-          <!--Profile Picture-->
-          <div class="col-4">
-            <div class="container d-flex justify-content-center align-items-center h-100">
-              <!-- Wrapper for centered content -->
-              <div class="center-wrapper">
-                <!-- Centered element -->
-                <img class="profile-img" src="images/myprofile3.jpg" alt="Profile Image">
-              </div>
-            </div>
-          </div>
 
+              <h1 class="fira-sans-bold">Hello! I'm <span class="highlight-container">
+                  <span class="highlight">John Dave</span>
+                </span>, a developer based in Bacolod City.</h1>
+              <p class="fira-sans-regular">
+                I am passionate about crafting code that adheres to best practices and industry standards, ensuring
+                cleanliness and efficiency in my programming.</p>
+              <p class="fira-sans-regular">
+                I attended the University of Saint Lasalle for four years, focusing on Computer Science with a
+                specialization in Game Development during my undergraduate studies.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!--Profile Picture-->
+        <div class="col-4">
+          <div class="container d-flex justify-content-center align-items-center h-100">
+            <!-- Wrapper for centered content -->
+            <div class="center-wrapper">
+              <!-- Centered element -->
+              <img class="profile-img" src="images/myprofile3.jpg" alt="Profile Image">
+            </div>
+          </div>
         </div>
 
       </div>
     </div>
+
+    <!-- </div> -->
+
+    <hr>
+
+  </div>
+
+
+
+  </div>
+
+  <div class="container mt-2" style="height: 20%;">
+    <button class="button-23" role="button">Blogs</button>
+    <button class="button-23" role="button">Projects</button>
   </div>
 
   <div class="container">
-    Hello World
+  </div>
+
+
+  <div class="container">
+    <h2 class="mb-2">Skills and Experience</h2>
+    <div class="row">
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Web Development</h5>
+              <ul>
+                <li>ASP.NET</li>
+                <li>React.js</li>
+                <li>Node.js</li>
+                <li>Express.js</li>
+                <li>RESTful APIs</li>
+                <li>Responsive Design</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Software Development</h5>
+              <ul>
+                <li>WPF (Windows Presentation Foundation)</li>
+                <li>.NET Framework</li>
+                <li>ASP.NET</li>
+                <li>Entity Framework</li>
+                <li>SQL Server</li>
+                <li>Git</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Project Management</h5>
+              <ul>
+                <li>Agile Methodology</li>
+                <li>Scrum</li>
+                <li>Task Prioritization</li>
+                <li>Team Collaboration</li>
+                <li>Client Communication</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+    </div> 
+
+  <div>
+
   </div>
 
 </body>
