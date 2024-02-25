@@ -3,7 +3,7 @@ html, body {
   }
   .container-full-height {
     display: grid;
-    height: 80%;
+    height: 100%;
   }
   .content {
     grid-row: 1;
@@ -44,3 +44,12 @@ html, body {
     border-radius: 20% 25% 20% 24%;
     padding: 10px 3px 3px 10px;
   }
+  
+ 
+
+  .rounded-card {
+    border-radius: 25px;
+    background-color: #f0f8ff;
+    border: none;
+  } 
+  
