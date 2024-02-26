@@ -36,6 +36,13 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <body class="">
+  <div id="circle"></div>
+
+  <div class="circles">
+    <div class="circle1"></div>
+    <div class="circle2"></div>
+    <div class="circle3"></div>
+  </div>
 
   <div class="main-tag">
     Portfolio
@@ -198,4 +205,24 @@
 
   // Schedule the background change every 1 second
   setInterval(changeBackground, 2000);
+
+  //Mouse Effect
+  document.addEventListener("DOMContentLoaded", function() {
+    var circle = document.getElementById('circle');
+
+    document.addEventListener("mousemove", function(e) {
+      // var x = e.clientX;
+      // var y = e.clientY;
+      // circle.style.left = x + "px";
+      // circle.style.top = y + "px";
+    });
+
+    document.addEventListener("click", function(e){
+      console.log("Clicked")
+      var x = e.clientX;
+      var y = e.clientY;
+      circle.style.left = x + "px";
+      circle.style.top = y + "px";
+    })
+  });
 </script>
