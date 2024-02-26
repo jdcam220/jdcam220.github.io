@@ -1,6 +1,23 @@
-html, body {
+html{
+  height: 100vh;
+}
+
+body {
     height: 100%;
+    /* background-image: linear-gradient(to right top, #ffffff, #ebf0ff, #cbe4ff, #9ddcff, #57d4ff); */
+    
   }
+
+  @keyframes fade {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+  }
+
+
   .container-full-height {
     display: grid;
     height: 100%;
@@ -52,4 +69,70 @@ html, body {
     background-color: #f0f8ff;
     border: none;
   } 
+
+  .main-tag {
+    position: absolute;
+    background: #B8DCDB;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+    padding: 5px 10px;
+    margin: 10px;
+    border-radius: 6px;
+    display: inline-block;
+  }
+
+  .main-panel{
+    padding: 30px;
+  }
+
+  .my-card{
+    background-color: white;
+    border-radius: 15px;
+    margin: 5px;
+  }
   
+  .tech {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    background-image: url('');;
+  }
+  /* Style for the icon */
+  .tech li {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+  
+  }
+
+  .symbol-round {
+    background-color: #e9eaec;
+    padding: 5px;
+    border-radius: 5px;
+    margin-right: 10px;
+  }
+
+  .highlighted-container {
+    background-color: #e9eaec;
+    border-radius: 15px;
+  }
+
+  .tag {
+    background: #B8DCDB;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+    padding: 5px 10px;
+    border-radius: 6px;
+    display: inline-block;
+    animation: tilt-shaking 2s ease infinite;
+  }
+
+  @keyframes tilt-shaking {
+    0% { transform: rotate(0deg); }
+    25% { transform: rotate(5deg); }
+    50% { transform: rotate(0deg); }
+    75% { transform: rotate(-5deg); }
+    100% { transform: rotate(0deg); }
+  }
